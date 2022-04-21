@@ -30,7 +30,7 @@
         tag="div"
         class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
       >
-        <CardItem
+        <CardArticle
           v-for="(item, i) in resultQuery"
           :key="item.id"
           :article="item"
@@ -40,10 +40,10 @@
   </div>
 </template>
 <script>
-import CardItem from "@/components/Card/CardItem.vue";
+import CardArticle from "@/components/Card/CardArticle.vue";
 export default {
   components: {
-    CardItem,
+    CardArticle,
   },
   data() {
     return {
